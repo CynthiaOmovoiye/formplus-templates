@@ -7,7 +7,7 @@ const Alink = ({ url, title }) => (
 function Template({
     template: { name, description, created, link },
 }) {
-  return <div className="rounded overflow-hidden shadow-3xl relative flex flex-col h-48">
+  return <div className="rounded overflow-hidden shadow-3xl relative flex flex-col h-fit md:h-48">
   <div className="px-6 py-4 h-full">
     <div className="font-bold text-xl mb-2 text-neutral-100" id='name'>{name}</div>
     <p className="text-neutral-50 text-base" id='desc'>
