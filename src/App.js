@@ -57,7 +57,11 @@ function App() {
        <Loader/>
       ) : (
         <>
-          <p className="mb-3">{filteredCategory} Templates</p>
+        <div className='flex justify-between'>
+        <p className="mb-3">{filteredCategory} Templates</p>
+        <p className="mb-3">{templates.length} Templates Found</p>
+        </div>
+         
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-2">
             {currentTemplateData.length ? (currentTemplateData.map((template, index) => (
               <Template key={index} template={template} />
